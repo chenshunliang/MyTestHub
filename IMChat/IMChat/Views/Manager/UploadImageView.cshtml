@@ -1,0 +1,99 @@
+﻿@model IMChat.Models.Users
+@{
+    ViewBag.Title = "上传用户头像";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+<div>
+    <div class="left">
+        @Html.Partial("_LeftMenu")
+    </div>
+    <div class="right">
+        <section id="loginForm">
+            @{
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <fieldset style="width: 400px;">
+                    <legend>上传头像</legend>
+                    <div style="margin-bottom: 30px;">
+                        <img src="#" alt="#" style="display: none;" id="uploadImg" width="100" height="100" />
+                    </div>
+                    <div>
+                        <input type="file" name="fileUpload" id="fileUpload" multiple="multiple" />
+                        <a href="javascript:void(0)" id="sureUpload">上传头像</a>|<a href="javascript:void(0)" id="cancelUpload">取消上传</a>
+                    </div>
+                </fieldset>
+            }
+        </section>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <link type="text/css" href="~/Scripts/Uploadify/uploadify.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/Uploadify/jquery.uploadify.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#fileUpload").uploadify({
+                'swf': '../Scripts/Uploadify/uploadify.swf',    //指定swf文件(带进度条)   
+                'uploader': '../Manager/UploadImage',          //后台处理的页面               
+
+                'buttonImage': '../Scripts/Uploadify/img_upload.png',
+                'height': 20,        //显示的高度和宽度，默认 height 30；width 120
+                'width': 90,         //显示的高度和宽度，默认 height 30；width 120
+
+                'auto': false,                 //设置为true 选择文件后自动上传
+                'multi': false,                //设置为true将允许多文件上传
+
+                'buttonText': '上传头像',           //按钮显示的文字
+                'buttonCursor': 'hand',     //鼠标弄上去小手状
+                'formData': {},             //发送给后台的其他参数通过formData指定
+                'progressData': 'speed',    //当上传的时候，显示的内容，有‘percentage’ or ‘speed’两个选项，即显示百分比或显示上传速度；
+                'fileTypeDesc': '请选择图片',      //这个属性值必须设置fileTypeExts属性后才有效，用来设置选择文件对话框中的提示文本，如设置fileTypeDesc为“请选择rar doc pdf文件”
+                'fileTypeExts': '*.jpg;*.jpeg',   //设置可以选择的文件的类型，格式如：‘*.*’ ’*.doc;*.pdf;*.rar’ 。
+                'fileSizeLimit': '2MB',                   //上传文件的大小限制 ，如果为整数型则表示以KB为单位的大小，如果是字符串，则可以使用(B, KB, MB, or GB)为单位，比如’2MB’；如果设置为0则表示无限制
+                'onUploadError': function (file, errorCode, errorMsg, errorString) {
+                    alert('文件: ' + file.name + ' 上传处理失败，请修改后重新上传 ');
+                },
+                'onUploadSuccess': function (file, data, response) {
+                    if (response == true) {
+                        alert(data);
+                        $("#uploadImg").attr("src", data);
+                        $("#uploadImg").css("display", "block");
+                    } else
+                        alert("上传失败");
+                },                            //上传执行完成后执行方法
+
+                //'queueSizeLimit': 10,//当允许多文件上传时，设置选择文件的个数，默认值为999 
+                //'folder': '/UploadFiles',   //上传的文件夹 其实就是一参数 后台仍然需要接收 完全可以不要这玩意
+
+                'removeCompleted': true,	//是否自动将已完成任务从队列中删除，如果设置为false则会一直保留此任务显示。
+                'removeTimeout': 1,    //如果设置了任务完成后自动从队列中移除，则可以规定从完成到被移除的时间间隔。
+                //requeueErrors	false	如果设置为true，则单个任务上传失败后将返回错误，并重新加入任务队列上传。
+                'successTimeout': 30,	//文件上传成功后服务端应返回成功标志，此项设置返回结果的超时时间
+                //fileDataName ：设置一个名字，在服务器处理程序中根据该名字来取上传文件的数据。默认为Filedata 
+                'method': 'post' // 提交方式Post 或Get 默认为Post 
+
+
+                //'fileTypeDesc': 'Image Files', //在浏览窗口底部的文件类型下拉菜单中显示的文本        
+                //'queueID': 'fileQueue',//上传文件页面中，你想要用来作为文件队列的元素的id, 默认为false  自动生成,  不带#
+                //checkScript ：用来判断上传选择的文件在服务器是否存在的后台处理程序的相对路径
+            })
+            //上传事件
+            $("#sureUpload").click(function () {
+                $('#fileUpload').uploadify('upload')
+            })
+            //取消上传
+            $("#cancelUpload").click(function () {
+                $('#fileUpload').uploadify('cancel')
+            })
+        })
+    </script>
+    <link type="text/css" href="~/Scripts/css/Layout.css" rel="stylesheet" />
+}
+
+

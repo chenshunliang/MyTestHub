@@ -1,0 +1,88 @@
+﻿@model IMChat.Models.Users
+@{
+    ViewBag.Title = "Manage";
+}
+
+<h2>用户管理</h2>
+<div>
+    <div class="left">
+        @Html.Partial("_LeftMenu")
+    </div>
+    @{
+        List<SelectListItem> list = new List<SelectListItem>();
+        SelectListItem mail = new SelectListItem();
+        mail.Text = "男";
+        mail.Value = "1";
+        SelectListItem femail = new SelectListItem();
+        femail.Text = "女";
+        femail.Value = "0";
+        list.Add(mail);
+        list.Add(femail);
+    }
+    <div class="right">
+        @using (Ajax.BeginForm("AddInfo", "Manager", new AjaxOptions
+    {
+        HttpMethod = "Post",
+        OnSuccess = "success",
+        Confirm = "确定修改吗？"
+    }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <fieldset>
+                <legend>信息修改</legend>
+                <ol class="list">
+                    <li>
+                        @Html.LabelFor(m => m.UserName)
+                        @Html.TextBoxFor(m => m.UserName, new { ReadOnly = "readonly" })
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.NickName)
+                        @Html.TextBoxFor(m => m.NickName)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.SignName)
+                        @Html.TextBoxFor(m => m.SignName)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Gender)
+                        @Html.DropDownListFor(m => m.Gender, list, "请选择")
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Mobile)
+                        @Html.TextBoxFor(m => m.Mobile)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Email)
+                        @Html.TextBoxFor(m => m.Email)
+                    </li>
+                </ol>
+            </fieldset>
+            <p>
+                @Html.HiddenFor(m => m.UserId)
+                @Html.HiddenFor(m => m.Salt)
+                @Html.HiddenFor(m => m.Hash)
+                @Html.HiddenFor(m => m.HeadImage)
+                @Html.HiddenFor(m => m.ExtenderInfo)
+                @Html.HiddenFor(m => m.Status)
+            </p>
+            <p>
+                <input type="submit" value="修改" />
+            </p>
+        }
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        function success(data) {
+            if (data == 'true') {
+                alert('更新成功');
+                window.location.reload();
+            } else
+                alert(data);
+
+        }
+    </script>
+    <link type="text/css" href="~/Scripts/css/Layout.css" rel="stylesheet" />
+}

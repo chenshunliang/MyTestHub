@@ -1,0 +1,2 @@
+2014-02-14 15:40:28,850 [7] FATAL LogHelper - 用户chen123登录成功
+2014-02-14 15:40:48,390 [7] FATAL LogHelper - 用户52bd16c146597b2a607036bd成功上传头像finefood2_1 (1).jpg

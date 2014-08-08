@@ -1,0 +1,27 @@
+2013-12-26 15:47:48,157 [8] FATAL WebTest.LogRecord - 进行记录
+2013-12-26 15:47:50,099 [8] FATAL WebTest.LogRecord - 进行记录
+2013-12-26 15:47:50,456 [9] FATAL WebTest.LogRecord - 进行记录
+2014-01-02 09:37:50,420 [5] FATAL WebTest.LogRecord - c:\Users\chen\Documents\Visual Studio 2012\Projects\IMChat\WebTest\CKeditor.aspx(23): error CS1061: “ASP.ckeditor_aspx”不包含“Button1_Click”的定义，并且找不到可接受类型为“ASP.ckeditor_aspx”的第一个参数的扩展方法“Button1_Click”(是否缺少 using 指令或程序集引用?)
+2014-01-02 09:41:42,788 [5] FATAL WebTest.LogRecord - 未能加载类型“CKFinder.Connector.Connector”。
+2014-01-02 10:10:22,361 [31] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:12:06,981 [31] FATAL WebTest.LogRecord - 从客户端(post_content="<h3 style="color:red...")中检测到有潜在危险的 Request.Form 值。
+2014-01-02 10:13:40,400 [33] FATAL WebTest.LogRecord - 从客户端(post_content="<h2 style="color: bl...")中检测到有潜在危险的 Request.Form 值。
+2014-01-02 10:52:29,090 [10] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:52:29,586 [10] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:52:35,462 [11] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:52:35,507 [35] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:52:36,948 [30] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:52:36,983 [11] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:52:42,876 [30] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:52:42,925 [11] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:52:50,621 [10] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 10:52:50,671 [35] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 11:10:12,064 [35] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 11:10:12,104 [10] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 11:10:14,632 [11] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 11:10:14,648 [10] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 11:20:43,392 [11] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-02 11:20:43,915 [35] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-01-03 10:36:35,022 [27] FATAL WebTest.LogRecord - 从客户端(post_content="<p>
+	sadasdsa</p>
+")中检测到有潜在危险的 Request.Form 值。

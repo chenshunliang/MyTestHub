@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script type="text/javascript" src="Script/jquery-1.7.1.js"></script>
+    <script type="text/javascript">
+        var num = '15852226598 ';
+        var reg = new RegExp(/^[1][3-8]\d{9}$/);
+        if (!reg.test(num.trim())) {
+            alert("收票手机号码有误");
+        }
+        alert('aaa');
+    </script>
+</head>
+<body>
+    <input type="text" readonly="readonly" />
+    <select id="selection" onselect="select(this);">
+        <option>aaa</option>
+        <option>sss</option>
+        <option>aaaaaaa</option>
+    </select>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload = function () {
+        var a = '2';
+        var b = '2';
+        alert(parseInt(a));
+        alert(parseFloat(b));
+        if (a == b)
+            alert("aa");
+        else
+            alert("bb");
+    };
+
+    function select(obj) {
+        var ops = document.getElementById("selection").childNodes;
+        for (var i = 0; i < ops.length; i++) {
+            if (ops[i].selected == false) {
+                ops[i].parentNode.removeNode(ops[i]);
+            }
+        }
+    }
+</script>

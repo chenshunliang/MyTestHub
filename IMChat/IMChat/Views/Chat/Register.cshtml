@@ -1,0 +1,48 @@
+﻿@model IMChat.Models.Users
+@{
+    ViewBag.Title = "注册";
+}
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+    <h2>新建帐户</h2>
+</hgroup>
+@using (Ajax.BeginForm("Register", "Chat", new AjaxOptions
+{
+    HttpMethod = "Post",
+    OnSuccess = "success"
+}))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <fieldset>
+        <legend>注册表单</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.NickName)
+                @Html.TextBoxFor(m => m.NickName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Salt)
+                @Html.PasswordFor(m => m.Salt)
+            </li>
+        </ol>
+        <input type="submit" value="注册" />
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        function success(data) {
+            if (data != "") {
+                alert(data);
+                window.location.href = "../chat/index";
+            }
+        }
+    </script>
+}

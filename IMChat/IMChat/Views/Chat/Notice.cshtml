@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Notice";
+}
+
+<h2>系统通知</h2>
+<div>
+    <span>@ViewBag.Message</span>
+    @{
+        if (ViewBag.Action == "toLogin")
+        {
+            Html.ActionLink("重新登录", "Default", "Chat");
+        }
+    }
+</div>
+@section scripts {
+    <script type="text/javascript">
+
+    </script>
+}

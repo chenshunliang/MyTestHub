@@ -1,0 +1,68 @@
+﻿@model IMChat.Models.Users
+@{
+    ViewBag.Title = "修改密码";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+<div>
+    <div class="left">
+        @Html.Partial("_LeftMenu")
+    </div>
+    <div class="right">
+        <section id="loginForm">
+            @{
+                using (Ajax.BeginForm("ChangePWD", "Manager", new AjaxOptions
+            {
+                HttpMethod = "Post",
+                OnSuccess = "success",
+                Confirm = "确定修改吗？"
+            }))
+                {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <fieldset>
+                    <legend>修改密码</legend>
+                    <ol>
+                        <li>
+                            <label>旧密码：</label>
+                            <input type="password" name="OldPwd" value="" />
+                        </li>
+                        <li>
+                            <label>新密码：</label>
+                            <input type="password" name="NewPwd" value="" />
+                        </li>
+                        <li>
+                            <label>重复新密码：</label>
+                            <input type="password" name="RepeatPwd" value="" />
+                        </li>
+                    </ol>
+                    <input type="submit" value="修改密码" />
+                    <p>
+                        @Html.HiddenFor(m => m.UserId)
+                    </p>
+                </fieldset>
+                }
+            }
+        </section>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        function success(data) {
+            if (data == '修改成功') {
+                alert(data);
+                window.location.href = "../Chat/Default";
+            } else {
+                alert(data);
+            }
+        }
+    </script>
+    <link type="text/css" href="~/Scripts/css/Layout.css" rel="stylesheet" />
+}
+

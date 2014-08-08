@@ -1,0 +1,109 @@
+2013-12-27 10:48:37,039 [5] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 10:51:01,567 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 系统出错啦
+2013-12-27 10:52:00,537 [5] ERROR IMChat.Common.MyExceptionFileAttribute - 系统出错啦
+2013-12-27 11:11:28,666 [16] ERROR IMChat.Common.MyExceptionFileAttribute - Unable to connect to server 127.0.0.1:27017: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:27017.
+2013-12-27 11:13:51,858 [10] ERROR IMChat.Common.MyExceptionFileAttribute - Unable to connect to server 127.0.0.1:27017: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:27017.MongoDB.Driver   在 MongoDB.Driver.Internal.DirectMongoServerProxy.Connect(TimeSpan timeout, ReadPreference readPreference)
+   在 MongoDB.Driver.Internal.DirectMongoServerProxy.ChooseServerInstance(ReadPreference readPreference)
+   在 MongoDB.Driver.MongoServer.AcquireConnection(MongoDatabase database, ReadPreference readPreference)
+   在 MongoDB.Driver.MongoCursorEnumerator`1.AcquireConnection()
+   在 MongoDB.Driver.MongoCursorEnumerator`1.GetFirst()
+   在 MongoDB.Driver.MongoCursorEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 IMChat.Controllers.ChatController.Login() 位置 c:\Users\chen\Documents\Visual Studio 2012\Projects\IMChat\IMChat\Controllers\ChatController.cs:行号 82
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass42.<BeginInvokeSynchronousActionMethod>b__41()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<>c__DisplayClass39.<BeginInvokeActionMethodWithFilters>b__33()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass4f.<InvokeActionMethodFilterAsynchronously>b__49()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeActionMethodWithFilters>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<>c__DisplayClass2a.<BeginInvokeAction>b__20()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+2013-12-27 11:21:55,158 [18] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 11:31:16,875 [14] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 13:38:34,887 [18] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 13:39:30,210 [18] FATAL LogHelper - 用户52a57d6546597b193c25f0c2密码修改成功
+2013-12-27 13:48:14,374 [8] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 13:48:14,393 [6] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 13:48:14,410 [7] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 13:48:14,393 [5] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 13:48:14,505 [8] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 13:48:14,507 [5] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 13:48:25,309 [6] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 13:53:40,733 [16] ERROR IMChat.Common.MyExceptionFileAttribute - An error occurred while deserializing the Gender property of class IMChat.Models.Users: Cannot deserialize string from BsonType Boolean.MongoDB.Bson
+2013-12-27 13:55:49,419 [15] ERROR IMChat.Common.MyExceptionFileAttribute - 索引超出范围。必须为非负值并小于集合大小。
+参数名: indexmscorlib
+2013-12-27 13:57:21,945 [26] FATAL LogHelper - 用户chen123注册成功
+2013-12-27 13:57:57,033 [6] FATAL LogHelper - 用户52bd16c146597b2a607036bd成功上传头像QQ图片20131217100042.jpg
+2013-12-27 16:20:27,287 [5] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:34,468 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:35,156 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:35,337 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:35,490 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:35,656 [5] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:35,792 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:35,967 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:36,139 [5] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:36,454 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:37,406 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:37,596 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:37,809 [5] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:38,009 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:38,189 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:38,375 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:38,531 [5] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:20:38,708 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:40,954 [17] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:41,323 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:41,480 [14] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:41,636 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:56,406 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:56,580 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:56,731 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:56,921 [17] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:57,091 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:57,249 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:57,408 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:57,575 [11] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:57,751 [15] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:57,911 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:58,235 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:58,434 [11] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:58,612 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:58,801 [15] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:58,970 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:59,150 [11] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:59,312 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:59,469 [6] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:22:59,602 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:08,976 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:09,158 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:09,337 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:09,518 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:09,692 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:09,847 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:09,990 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:10,146 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:10,309 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:10,478 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:10,651 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:10,806 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:10,998 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:11,132 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:11,270 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:11,430 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:11,589 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:11,753 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:11,926 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:12,095 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:12,420 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:12,577 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:12,733 [8] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:12,888 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:13,195 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:13,349 [12] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:23:13,651 [13] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:29:08,416 [29] ERROR IMChat.Common.MyExceptionFileAttribute - 未能找到路径“c:\windows\system32\inetsrv\AppSettings\DataSetting.config”的一部分。mscorlib
+2013-12-27 16:33:50,275 [27] FATAL LogHelper - 用户chen123登录成功
+2013-12-27 17:20:45,282 [14] FATAL LogHelper - 用户chen123登录成功

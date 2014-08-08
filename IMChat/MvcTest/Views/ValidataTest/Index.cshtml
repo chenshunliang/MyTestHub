@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        .field-validation-error
+        {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Index", "ValidataTest", FormMethod.Post, null))
+        {
+            @Html.EditorForModel()
+            <input type="submit" value="提交" />
+        }
+    </div>
+</body>
+</html>

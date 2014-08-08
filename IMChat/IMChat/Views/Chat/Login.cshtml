@@ -1,0 +1,76 @@
+﻿@model IMChat.Models.Users
+@{
+    ViewBag.Title = "用户登录";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+
+<section id="loginForm">
+    <h2>使用本地帐户登录。</h2>
+    @{if (User.Identity.IsAuthenticated)
+      {
+          //如果有已经登录的凭证       
+          IMChat.Models.Users user = ViewBag.User as IMChat.Models.Users;
+        <a href="../Chat/Index">
+            <img alt="#" src="../HeadImage/@user.UserId/@user.HeadImage" width="100" height="100" /></a>
+        @Html.ActionLink("已经登录，点此跳转到聊天页面", "Index", "Chat", null, new { @class = "btnClass" })
+      }
+      else
+      {
+          using (Ajax.BeginForm("Login", "Chat", new { PathUrl = Request.Url.AbsoluteUri }, new AjaxOptions
+      {
+          HttpMethod = "Post",
+          OnSuccess = "success"
+      }))
+          {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        <fieldset>
+            <legend>“登录”表单</legend>
+            <ol>
+                <li>
+                    @Html.LabelFor(m => m.UserName)
+                    @Html.TextBoxFor(m => m.UserName)
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </li>
+                <li>
+                    @Html.LabelFor(m => m.Salt)
+                    @Html.PasswordFor(m => m.Salt)
+                    @Html.ValidationMessageFor(m => m.Salt)
+                </li>
+            </ol>
+            <input type="submit" value="登录" />
+        </fieldset>
+        <p>
+            @Html.ActionLink("注册", "ToRegister", "Chat") 如果你没有帐户。
+        </p>
+          }
+      }
+    }
+</section>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script type="text/javascript">
+        function success(data) {
+            if (data == '登录失败') {
+                alert(data);
+                return;
+            }
+            if (data != '')
+                window.location.href = data;
+        }
+    </script>
+    <style type="text/css">
+        .btnClass
+        {
+            font-size: 16px;
+            color: blue;
+        }
+    </style>
+}
+
