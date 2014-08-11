@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <script type="text/javascript" src="../Scripts/jquery-1.8.2.min.js"></script>
 </head>
@@ -11,8 +11,20 @@
 </html>
 <script type="text/javascript">
     $(function () {
-        $.getJSON('../api/product/1', {}, function (data) {
-            alert(data);
+        //$.getJSON('../api/product?name=汽车', {}, function (data) {
+        //    alert(data);
+        //});
+        //$.post('../api/product', { Id: 5, Name: '杯子', Price: 10.00 }, function (data) {
+        //    alert(JSON.stringify(data));
+        //}, 'json');
+        $.ajax({
+            url: '../api/product/1',
+            data: {},
+            dataType: 'json',
+            type: 'Delete',
+            success: function (data) {
+                alert(JSON.stringify(data));
+            }
         });
     });
 </script>
