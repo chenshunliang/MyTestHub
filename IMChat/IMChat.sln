@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiXin", "WeiXin\WeiXin.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{752BAD2D-F890-4507-9440-09A5589FFF1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "WebApiClient\WebApiClient.csproj", "{1A42E1D5-816D-4210-8218-1A5385763BE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{752BAD2D-F890-4507-9440-09A5589FFF1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{752BAD2D-F890-4507-9440-09A5589FFF1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{752BAD2D-F890-4507-9440-09A5589FFF1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A42E1D5-816D-4210-8218-1A5385763BE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A42E1D5-816D-4210-8218-1A5385763BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A42E1D5-816D-4210-8218-1A5385763BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A42E1D5-816D-4210-8218-1A5385763BE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
