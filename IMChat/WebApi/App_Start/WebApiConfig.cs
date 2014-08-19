@@ -11,8 +11,9 @@ namespace WebApi
         {
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{id}",// 路由模版路径
+                defaults: new { id = RouteParameter.Optional },// 路由参数默认值
+                constraints: new { id = @"\d+" }//web api 路由参数限制
             );
 
             // 取消注释下面的代码行可对具有 IQueryable 或 IQueryable<T> 返回类型的操作启用查询支持。
