@@ -9,6 +9,8 @@ namespace WebApi
     {
         public static void Register(HttpConfiguration config)
         {
+            //启动属性路由
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",// 路由模版路径
@@ -24,6 +26,7 @@ namespace WebApi
             // 若要在应用程序中禁用跟踪，请注释掉或删除以下代码行
             // 有关详细信息，请参阅: http://www.asp.net/web-api
             config.EnableSystemDiagnosticsTracing();
+
         }
     }
 }

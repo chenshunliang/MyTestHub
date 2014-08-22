@@ -9,6 +9,7 @@ using WebApi.Repository;
 
 namespace WebApi.Controllers
 {
+    [RoutePrefix]
     public class ProductController : ApiController
     {
         #region Old
@@ -50,6 +51,7 @@ namespace WebApi.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        //[Route]
         public Product GetProduct(int id)
         {
             return product.Get(id);
