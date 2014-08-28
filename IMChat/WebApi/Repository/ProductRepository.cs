@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Web;
+using System.Web.Http;
 using WebApi.Models;
 
 namespace WebApi.Repository
@@ -19,15 +21,25 @@ namespace WebApi.Repository
             Add(new Product() { ID = 3, Name = "汽车", Price = 120000.00m });
         }
 
-        public IEnumerable<Models.Product> GetAll()
+        public IEnumerable<Models.Product> GetAll() 
         {
             return proList;
         }
 
+        
         public Models.Product Get(int id)
         {
             if (id >= proList.Count || id < 0)
-                return null;
+            {
+                //响应消息
+                HttpResponseMessage msg = new HttpResponseMessage(System.Net.HttpStatusCode.NotFound)
+                {
+                    Content = new StringContent("this product is not found"),
+                    ReasonPhrase = "",
+                    StatusCode = System.Net.HttpStatusCode.NotFound
+                };
+                throw new HttpResponseException(msg);
+            }
             else
             {
                 return proList[id];

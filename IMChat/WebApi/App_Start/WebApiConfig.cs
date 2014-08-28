@@ -10,12 +10,18 @@ namespace WebApi
         public static void Register(HttpConfiguration config)
         {
             //启动属性路由
+            //config.MapHttpAttributeRoutes();
+
+            //config.Routes.MapHttpRoute(
+            //    name: "my",
+            //    routeTemplate: "api/{controller}/pro"
+            //);
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",// 路由模版路径
-                defaults: new { id = RouteParameter.Optional },// 路由参数默认值
-                constraints: new { id = @"\d+" }//web api 路由参数限制
+                defaults: new { id = RouteParameter.Optional }//,// 路由参数默认值
+                //constraints: new { id = @"\d+" }//web api 路由参数限制
             );
 
             // 取消注释下面的代码行可对具有 IQueryable 或 IQueryable<T> 返回类型的操作启用查询支持。

@@ -11,17 +11,17 @@
 </html>
 <script type="text/javascript">
     $(function () {
-        //$.getJSON('../api/product?name=汽车', {}, function (data) {
+        //$.getJSON('../api/Product', {}, function (data) {
         //    alert(data);
         //});
         //$.post('../api/product', { Id: 5, Name: '杯子', Price: 10.00 }, function (data) {
         //    alert(JSON.stringify(data));
         //}, 'json');
         $.ajax({
-            url: '../api/product/1',
+            url: '../api/product?Id=1&Name=被子&Price0.01',
             data: {},
             dataType: 'json',
-            type: 'Delete',
+            type: 'get',
             success: function (data) {
                 alert(JSON.stringify(data));
             }

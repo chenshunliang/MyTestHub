@@ -4,12 +4,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApi.Filter;
 using WebApi.Models;
 using WebApi.Repository;
 
 namespace WebApi.Controllers
 {
-    [RoutePrefix]
+    //[RoutePrefix]
+    //[MyExceptionFilter]
     public class ProductController : ApiController
     {
         #region Old
@@ -41,17 +43,17 @@ namespace WebApi.Controllers
         /// 获取所有产品，约定Get方法
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<Product> GetAllProduct()
-        {
-            return product.GetAll();
-        }
+        //public IEnumerable<Product> GetAllProduct()
+        //{
+        //    return product.GetAll();
+        //}
 
         /// <summary>
         /// 通过Id查找产品，约定Get方法
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        //[Route]
+        //[Route("customers/{id}/product")]
         public Product GetProduct(int id)
         {
             return product.Get(id);
@@ -65,6 +67,16 @@ namespace WebApi.Controllers
         public IEnumerable<Product> GetProductsByName(string name)
         {
             return product.GetAll().Where(p => p.Name == name);
+        }
+
+        /// <summary>
+        /// FromUri test
+        /// </summary>
+        /// <param name="pro"></param>
+        /// <returns></returns>
+        public Product GetByProduct(Product pro)
+        {
+            return product.GetAll().Where(p => p.ID == pro.ID).FirstOrDefault();
         }
 
         /// <summary>
