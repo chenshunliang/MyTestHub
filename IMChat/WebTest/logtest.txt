@@ -25,3 +25,9 @@
 2014-01-03 10:36:35,022 [27] FATAL WebTest.LogRecord - 从客户端(post_content="<p>
 	sadasdsa</p>
 ")中检测到有潜在危险的 Request.Form 值。
+2014-10-15 15:34:26,520 [7] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-10-15 15:35:24,812 [7] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-10-15 15:39:08,089 [6] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-10-15 15:39:12,057 [7] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-10-15 15:40:07,180 [7] FATAL WebTest.LogRecord - 引发类型为“System.Web.HttpUnhandledException”的异常。
+2014-10-15 15:47:54,740 [8] FATAL WebTest.LogRecord - d:\MyGit\MyTestHub\IMChat\WebTest\DataLinkage.aspx(14): error CS1061: “ASP.datalinkage_aspx”不包含“first_TextChanged”的定义，并且找不到可接受类型为“ASP.datalinkage_aspx”的第一个参数的扩展方法“first_TextChanged”(是否缺少 using 指令或程序集引用?)

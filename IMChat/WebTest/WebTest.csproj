@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CKeditor.aspx" />
+    <Content Include="DataLinkage.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Lib\CKFinder.dll" />
     <Content Include="Lib\log4net.dll" />
@@ -1005,6 +1006,13 @@
     <Compile Include="CKeditor.aspx.designer.cs">
       <DependentUpon>CKeditor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DataLinkage.aspx.cs">
+      <DependentUpon>DataLinkage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataLinkage.aspx.designer.cs">
+      <DependentUpon>DataLinkage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1024,6 +1032,8 @@
     <Compile Include="Prreturn.aspx.designer.cs">
       <DependentUpon>Prreturn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SQLHelper.cs" />
+    <Compile Include="TreeModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Script\ckeditor\.htaccess" />
