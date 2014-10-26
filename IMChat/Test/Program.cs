@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.PanGu;
+using System.Data.SqlClient;
 
 namespace Test
 {
@@ -39,7 +40,7 @@ namespace Test
             //Console.ReadKey();
 
 
-            Console.WriteLine(Guid.NewGuid().ToString().Replace("-","+"));
+            Console.WriteLine(Guid.NewGuid().ToString().Replace("-", "+"));
             Console.ReadKey();
 
             //PropertyInfo[] properties = new Student().GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
@@ -129,6 +130,15 @@ namespace Test
             inArray = algorithm.ComputeHash(dst);
 
             return Convert.ToBase64String(inArray);
+        }
+
+        /// <summary>
+        /// 输出参数
+        /// </summary>
+        public static void ReturnParameter()
+        {
+            SqlParameter para = new SqlParameter("@ReturnValue", System.Data.SqlDbType.BigInt);
+            para.Direction = System.Data.ParameterDirection.Output;
         }
     }
 
