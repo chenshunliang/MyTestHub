@@ -26,6 +26,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcTest", "MvcTest\MvcTest.csproj", "{E9CF1038-53A7-484B-9D2F-51D912AEB984}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrmTest", "OrmTest\OrmTest.csproj", "{0C86FA07-0F95-4AF8-98CA-D3CD5AE33A3F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9CF1038-53A7-484B-9D2F-51D912AEB984} = {E9CF1038-53A7-484B-9D2F-51D912AEB984}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spring", "Spring\Spring.csproj", "{5D6B57B7-CF00-4E81-A5CD-27907E61616D}"
 EndProject
