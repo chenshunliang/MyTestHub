@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Messaging;
 using System.Reflection;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Lucene.Net.Analysis;
 using Lucene.Net.Analysis.PanGu;
 using System.Data.SqlClient;
+using MSMQTest;
+using HashAlgorithm = System.Security.Cryptography.HashAlgorithm;
 
 namespace Test
 {
@@ -40,8 +42,8 @@ namespace Test
             //Console.ReadKey();
 
 
-            Console.WriteLine(Guid.NewGuid().ToString().Replace("-", "+"));
-            Console.ReadKey();
+            //Console.WriteLine(Guid.NewGuid().ToString().Replace("-", "+"));
+            //Console.ReadKey();
 
             //PropertyInfo[] properties = new Student().GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
             //foreach (PropertyInfo item in properties)
@@ -98,7 +100,12 @@ namespace Test
             //{
             //    Console.WriteLine(e.Message);
             //}
-            Console.WriteLine(EncodePwdToMD5("abc", "a"));
+            //Console.WriteLine(EncodePwdToMD5("abc", "a"));
+
+            MessageQueue mq = new MessageQueue(@".\Private$\test2");
+            mq.Formatter = new XmlMessageFormatter(new string[] { "System.String" });
+            Message obj = (Message)mq.Receive();
+            Console.WriteLine(obj.Body);
 
             Console.ReadKey();
         }
