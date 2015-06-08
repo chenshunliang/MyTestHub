@@ -1,0 +1,14 @@
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\WebApiClient.exe.config
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\WebApiClient.exe
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\WebApiClient.pdb
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\Newtonsoft.Json.dll
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\System.Net.Http.Formatting.dll
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\System.Web.Http.dll
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\System.Web.Http.SelfHost.dll
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\Newtonsoft.Json.xml
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\System.Net.Http.Formatting.xml
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\System.Web.Http.xml
+D:\Mytest\MyTestHub\IMChat\WebApiClient\bin\Debug\System.Web.Http.SelfHost.xml
+D:\Mytest\MyTestHub\IMChat\WebApiClient\obj\Debug\WebApiClient.csprojResolveAssemblyReference.cache
+D:\Mytest\MyTestHub\IMChat\WebApiClient\obj\Debug\WebApiClient.exe
+D:\Mytest\MyTestHub\IMChat\WebApiClient\obj\Debug\WebApiClient.pdb

@@ -1,0 +1,12 @@
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\Test.exe.config
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\Test.exe
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\Test.pdb
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\Lucene.Net.dll
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\PanGu.dll
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\PanGu.HighLight.dll
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\PanGu.Lucene.Analyzer.dll
+D:\Mytest\MyTestHub\IMChat\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Mytest\MyTestHub\IMChat\Test\obj\Debug\Test.exe
+D:\Mytest\MyTestHub\IMChat\Test\obj\Debug\Test.pdb
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\MSMQTest.exe
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\MSMQTest.pdb

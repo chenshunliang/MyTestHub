@@ -1,0 +1,7 @@
+D:\Mytest\MyTestHub\IMChat\WebTest\bin\WebTest.dll
+D:\Mytest\MyTestHub\IMChat\WebTest\bin\WebTest.pdb
+D:\Mytest\MyTestHub\IMChat\WebTest\bin\CKFinder.dll
+D:\Mytest\MyTestHub\IMChat\WebTest\bin\log4net.dll
+D:\Mytest\MyTestHub\IMChat\WebTest\bin\log4net.xml
+D:\Mytest\MyTestHub\IMChat\WebTest\obj\Debug\WebTest.dll
+D:\Mytest\MyTestHub\IMChat\WebTest\obj\Debug\WebTest.pdb

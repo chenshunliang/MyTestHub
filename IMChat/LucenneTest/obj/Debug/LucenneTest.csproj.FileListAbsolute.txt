@@ -1,0 +1,16 @@
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\bin\Dict\ChsDoubleName1.txt
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\bin\Dict\ChsDoubleName2.txt
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\bin\Dict\ChsSingleName.txt
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\bin\Dict\Stopword.txt
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\bin\Dict\Synonym.txt
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\bin\Dict\Wildcard.txt
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\bin\Dict\Dict.dct
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\LucenneTest.dll
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\LucenneTest.pdb
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\Lucene.Net.dll
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\PanGu.dll
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\PanGu.HighLight.dll
+D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\PanGu.Lucene.Analyzer.dll
+D:\Mytest\MyTestHub\IMChat\LucenneTest\obj\Debug\LucenneTest.csprojResolveAssemblyReference.cache
+D:\Mytest\MyTestHub\IMChat\LucenneTest\obj\Debug\LucenneTest.dll
+D:\Mytest\MyTestHub\IMChat\LucenneTest\obj\Debug\LucenneTest.pdb

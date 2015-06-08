@@ -1,0 +1,2 @@
+D:\Mytest\MyTestHub\IMChat\MemcachedTest\obj\Debug\MemcachedTest.csprojResolveAssemblyReference.cache
+D:\Mytest\MyTestHub\IMChat\MemcachedTest\bin\Debug\MemcachedTest.exe.config

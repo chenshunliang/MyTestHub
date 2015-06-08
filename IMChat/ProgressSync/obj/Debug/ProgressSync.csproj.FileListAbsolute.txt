@@ -1,0 +1,5 @@
+D:\Mytest\MyTestHub\IMChat\ProgressSync\bin\Debug\ProgressSync.exe.config
+D:\Mytest\MyTestHub\IMChat\ProgressSync\bin\Debug\ProgressSync.exe
+D:\Mytest\MyTestHub\IMChat\ProgressSync\bin\Debug\ProgressSync.pdb
+D:\Mytest\MyTestHub\IMChat\ProgressSync\obj\Debug\ProgressSync.exe
+D:\Mytest\MyTestHub\IMChat\ProgressSync\obj\Debug\ProgressSync.pdb

@@ -1,0 +1,11 @@
+D:\Mytest\MyTestHub\IMChat\Spring\bin\Debug\Spring.exe.config
+D:\Mytest\MyTestHub\IMChat\Spring\bin\Debug\Spring.exe
+D:\Mytest\MyTestHub\IMChat\Spring\bin\Debug\Spring.pdb
+D:\Mytest\MyTestHub\IMChat\Spring\bin\Debug\Common.Logging.dll
+D:\Mytest\MyTestHub\IMChat\Spring\bin\Debug\Spring.Aop.dll
+D:\Mytest\MyTestHub\IMChat\Spring\bin\Debug\Spring.Core.dll
+D:\Mytest\MyTestHub\IMChat\Spring\bin\Debug\Spring.Data.dll
+D:\Mytest\MyTestHub\IMChat\Spring\bin\Debug\Spring.Data.NHibernate30.dll
+D:\Mytest\MyTestHub\IMChat\Spring\bin\Debug\Spring.Web.dll
+D:\Mytest\MyTestHub\IMChat\Spring\obj\Debug\Spring.exe
+D:\Mytest\MyTestHub\IMChat\Spring\obj\Debug\Spring.pdb

@@ -1,0 +1,9 @@
+D:\Mytest\MyTestHub\IMChat\eventTest\bin\Debug\eventTest.exe.config
+D:\Mytest\MyTestHub\IMChat\eventTest\bin\Debug\eventTest.exe
+D:\Mytest\MyTestHub\IMChat\eventTest\bin\Debug\eventTest.pdb
+D:\Mytest\MyTestHub\IMChat\eventTest\obj\Debug\eventTest.csprojResolveAssemblyReference.cache
+D:\Mytest\MyTestHub\IMChat\eventTest\obj\Debug\eventTest.Form1.resources
+D:\Mytest\MyTestHub\IMChat\eventTest\obj\Debug\eventTest.Properties.Resources.resources
+D:\Mytest\MyTestHub\IMChat\eventTest\obj\Debug\eventTest.csproj.GenerateResource.Cache
+D:\Mytest\MyTestHub\IMChat\eventTest\obj\Debug\eventTest.exe
+D:\Mytest\MyTestHub\IMChat\eventTest\obj\Debug\eventTest.pdb

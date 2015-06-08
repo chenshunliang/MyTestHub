@@ -1,0 +1,7 @@
+D:\Mytest\MyTestHub\IMChat\ExcelImportToSql\bin\Debug\ExcelImportToSql.exe.config
+D:\Mytest\MyTestHub\IMChat\ExcelImportToSql\bin\Debug\ExcelImportToSql.exe
+D:\Mytest\MyTestHub\IMChat\ExcelImportToSql\bin\Debug\ExcelImportToSql.pdb
+D:\Mytest\MyTestHub\IMChat\ExcelImportToSql\bin\Debug\NPOI.dll
+D:\Mytest\MyTestHub\IMChat\ExcelImportToSql\obj\Debug\ExcelImportToSql.csprojResolveAssemblyReference.cache
+D:\Mytest\MyTestHub\IMChat\ExcelImportToSql\obj\Debug\ExcelImportToSql.exe
+D:\Mytest\MyTestHub\IMChat\ExcelImportToSql\obj\Debug\ExcelImportToSql.pdb
