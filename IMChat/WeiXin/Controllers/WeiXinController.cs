@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Configuration;
 using System.Security.Cryptography;
 using System.Text;
-using System.Web;
 using System.Web.Mvc;
-using WeiXin.Tools;
 
 namespace WeiXin.Controllers
 {
@@ -15,11 +12,8 @@ namespace WeiXin.Controllers
         // GET: /WeiXin/
 
         //token  A1A8887793ACFC199182A649E905DAAB
-
-        public ActionResult Index()
-        {
-            return View();
-        }
+        private readonly string _appId = ConfigurationManager.AppSettings["weixin_appid"];
+        private readonly string _appSecret = ConfigurationManager.AppSettings["weixn_appsecret"];
 
         /// <summary>
         /// 校验token
@@ -33,7 +27,7 @@ namespace WeiXin.Controllers
             string nonce = Request["nonce"];
             string echostr = Request["echostr"];
 
-            string token = "A1A8887793ACFC199182A649E905DAAB";
+            string token = WeixinHelper.GetToken(_appId, _appSecret);
             string[] para = new string[] { token, timestamp, nonce };
             var str = "";
             Array.Sort(para);
@@ -42,15 +36,33 @@ namespace WeiXin.Controllers
             HashAlgorithm sha1 = new SHA1CryptoServiceProvider();
             var hashData = sha1.ComputeHash(value);
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < hashData.Length; i++)
+            foreach (byte t in hashData)
             {
-                sb.Append(hashData[i].ToString("X2"));
+                sb.Append(t.ToString("X2"));
             }
             if (echostr == sb.ToString())
                 return Content(echostr);
-            else
-                return Content("");
+            return Content("");
         }
 
+        /// <summary>
+        /// 获取微信token
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult GetToken()
+        {
+            string token = WeixinHelper.GetToken(_appId, _appSecret);
+            return Content(token);
+        }
+
+        /// <summary>
+        /// 接受微信消息
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult GetMessage()
+        {
+
+        }
     }
 }
