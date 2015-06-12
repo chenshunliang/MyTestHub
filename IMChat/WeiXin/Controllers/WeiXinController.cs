@@ -29,7 +29,7 @@ namespace WeiXin.Controllers
         }
 
         /// <summary>
-        /// 接受微信消息
+        /// 接受微 信消息
         /// </summary>
         /// <returns></returns>
         [HttpPost]
