@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Xml.Linq;
+using WeiXin.Common;
 using WeiXin.Message.Req;
 
 namespace WeiXin.Handle
@@ -23,12 +25,14 @@ namespace WeiXin.Handle
         /// <returns></returns>
         public string Execute(string postStr)
         {
-            string msgType = "";
+            XDocument document = XDocument.Load(postStr);
+            string msgType = document.Root.Element("MsgType").Value;
             string responseTest = "";
             switch (msgType)
             {
                 case "text":
-                    responseTest = ActionHandle.HandleText(new RequestText());
+                    RequestText text = (RequestText)XMLUtil.Deserialize(typeof(RequestText), postStr);
+                    responseTest = ActionHandle.HandleText(text);
                     break;
             }
             return responseTest;

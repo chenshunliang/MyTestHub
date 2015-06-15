@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using WeiXin.Enum;
 using WeiXin.Message.Base;
+using WeiXin.Message.Descrption;
 
 namespace WeiXin.Message.Res
 {

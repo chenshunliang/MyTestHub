@@ -15,6 +15,7 @@ namespace WeiXin.Handle
         /// <returns></returns>
         public string HandleText(RequestText info)
         {
+            
             return "";
         }
     }

@@ -118,8 +118,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Handle\IWeixinAction.cs" />
+    <Compile Include="Handle\WeixinAction.cs" />
     <Compile Include="Handle\WeixinApiDispatch.cs" />
+    <Compile Include="Message\Base\BaseEvent.cs" />
     <Compile Include="Message\Base\BaseMessage.cs" />
+    <Compile Include="Message\Descrption\ArticleEntity.cs" />
     <Compile Include="Message\Req\RequestText.cs" />
     <Compile Include="Message\Res\ResponseNews.cs" />
     <Compile Include="Message\Res\ResponseText.cs" />
