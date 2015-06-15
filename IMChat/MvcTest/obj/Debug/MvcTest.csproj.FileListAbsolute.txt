@@ -36,3 +36,4 @@ D:\Mytest\MyTestHub\IMChat\MvcTest\bin\zh-Hans\System.Web.WebPages.Deployment.re
 D:\Mytest\MyTestHub\IMChat\MvcTest\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 D:\Mytest\MyTestHub\IMChat\MvcTest\obj\Debug\MvcTest.dll
 D:\Mytest\MyTestHub\IMChat\MvcTest\obj\Debug\MvcTest.pdb
+D:\Mytest\MyTestHub\IMChat\MvcTest\obj\Debug\MvcTest.csprojResolveAssemblyReference.cache
