@@ -17,9 +17,9 @@ namespace WeiXin.Handle
         public string HandleText(RequestText info)
         {
             ResponseText resText = new ResponseText(info);
-            if (info.Content == "")
+            if (string.IsNullOrEmpty(info.Content))
             {
-                resText.Content = "aaa";
+                resText.Content = "个人测试中...";
             }
             return XMLUtil.Serializer(typeof(ResponseText), resText);
         }

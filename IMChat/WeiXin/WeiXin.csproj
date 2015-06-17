@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -110,6 +111,8 @@
   <ItemGroup>
     <Compile Include="Common\Cryptography.cs" />
     <Compile Include="Common\DateTimeExtend.cs" />
+    <Compile Include="Common\HttpHelper.cs" />
+    <Compile Include="Common\MemoryCacheHelper.cs" />
     <Compile Include="Common\MsgCrypt.cs" />
     <Compile Include="Common\XMLUtil.cs" />
     <Compile Include="Controllers\WeiXinController.cs" />
@@ -133,6 +136,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\MD5Help.cs" />
     <Compile Include="Common\WeixinHelper.cs" />
+    <Compile Include="UserMgr\BaseJsonResult.cs" />
+    <Compile Include="UserMgr\GroupJson.cs" />
+    <Compile Include="UserMgr\UserJson.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />

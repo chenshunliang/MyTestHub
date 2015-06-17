@@ -24,8 +24,8 @@ namespace WeiXin.Message.Req
         public RequestText(BaseMessage info)
             : this()
         {
-            this.FromUserName = info.ToUserName;
-            this.ToUserName = info.FromUserName;
+            this.FromUserName = info.FromUserName;
+            this.ToUserName = info.ToUserName;
         }
 
         /// <summary>

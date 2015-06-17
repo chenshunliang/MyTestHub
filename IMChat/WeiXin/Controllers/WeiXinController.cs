@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Configuration;
 using System.IO;
+using System.Runtime.Caching;
 using System.Text;
 using System.Web.Mvc;
 using System.Web.Security;
+using WeiXin.Common;
 using WeiXin.Handle;
 
 namespace WeiXin.Controllers
@@ -19,6 +21,7 @@ namespace WeiXin.Controllers
 
         public ActionResult Test()
         {
+            string str = GetAccessToken(_appId, _appSecret);
             return View();
         }
 
@@ -110,6 +113,31 @@ namespace WeiXin.Controllers
 
             Response.ContentEncoding = Encoding.UTF8;
             return responseContent;
+        }
+
+        /// <summary>
+        /// 获取access_token
+        /// </summary>
+        /// <param name="appid"></param>
+        /// <param name="appsecret"></param>
+        /// <returns></returns>
+        private string GetAccessToken(string appid, string appsecret)
+        {
+            //正常情况下access_token有效期为7200秒,这里使用缓存设置短于这个时间即可
+            string access_token = MemoryCacheHelper.GetCacheItem<string>("access_token", delegate()
+            {
+                string grant_type = "client_credential";
+                var url = string.Format("https://api.weixin.qq.com/cgi-bin/token?grant_type={0}&appid={1}&secret={2}",
+                                        grant_type, appid, appsecret);
+
+                string result = HttpHelper.HttpGet(url);
+                string token = HttpHelper.GetJsonValue(result, "access_token");
+                return token;
+            },
+                7100//7000秒过期
+            );
+
+            return access_token;
         }
     }
 }

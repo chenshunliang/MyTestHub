@@ -22,8 +22,8 @@ namespace WeiXin.Message.Req
         public RequestImage(BaseMessage info)
             : this()
         {
-            this.FromUserName = info.ToUserName;
-            this.ToUserName = info.FromUserName;
+            this.FromUserName = info.FromUserName;
+            this.ToUserName = info.ToUserName;
         }
 
         /// <summary>

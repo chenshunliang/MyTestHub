@@ -14,9 +14,9 @@ namespace WeiXin.Message.Req
     [XmlRoot(ElementName = "xml")]
     public class RequestEventSubscribe : BaseEvent
     {
-        public RequestEventSubscribe()
+        public RequestEventSubscribe(EventType eType)
         {
-            
+            this.Event = eType.ToString();
         }
     }
 }
