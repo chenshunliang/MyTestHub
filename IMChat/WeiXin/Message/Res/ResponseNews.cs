@@ -16,7 +16,7 @@ namespace WeiXin.Message.Res
     {
         public ResponseNews()
         {
-            this.MsgType = ResponseMsgType.News.ToString().ToLower();
+            this.MsgType = MsgTypeEnum.News.ToString().ToLower();
 
             this.Articles = new List<ArticleEntity>();
         }

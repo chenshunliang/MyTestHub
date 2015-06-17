@@ -113,7 +113,8 @@
     <Compile Include="Common\MsgCrypt.cs" />
     <Compile Include="Common\XMLUtil.cs" />
     <Compile Include="Controllers\WeiXinController.cs" />
-    <Compile Include="Enum\ResponseMsgType.cs" />
+    <Compile Include="Enum\EventType.cs" />
+    <Compile Include="Enum\MsgTypeEnum.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -123,9 +124,12 @@
     <Compile Include="Message\Base\BaseEvent.cs" />
     <Compile Include="Message\Base\BaseMessage.cs" />
     <Compile Include="Message\Descrption\ArticleEntity.cs" />
+    <Compile Include="Message\Req\RequestEventSubscribe.cs" />
+    <Compile Include="Message\Req\RequestImage.cs" />
     <Compile Include="Message\Req\RequestText.cs" />
     <Compile Include="Message\Res\ResponseNews.cs" />
     <Compile Include="Message\Res\ResponseText.cs" />
+    <Compile Include="Message\Res\ResponseImage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\MD5Help.cs" />
     <Compile Include="Common\WeixinHelper.cs" />

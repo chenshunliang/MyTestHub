@@ -6,21 +6,22 @@ using System.Web;
 namespace WeiXin.Enum
 {
     /// <summary>
-    /// 回复类型枚举
+    /// 事件类型枚举
     /// </summary>
-    public enum ResponseMsgType
+    public enum EventType
     {
         /// <summary>
-        /// 文本
+        /// 订阅
         /// </summary>
-        Text,
+        subscribe,
         /// <summary>
-        /// 图文
+        /// 取消订阅
         /// </summary>
-        News,
+        unsubscribe,
         /// <summary>
-        /// 事件
+        /// 已关注
         /// </summary>
-        Event
+        SCAN,
+
     }
 }

@@ -1,4 +1,3 @@
-D:\Mytest\MyTestHub\IMChat\IMChat\obj\Debug\IMChat.csprojResolveAssemblyReference.cache
 D:\Mytest\MyTestHub\IMChat\IMChat\bin\IMChat.dll
 D:\Mytest\MyTestHub\IMChat\IMChat\bin\IMChat.pdb
 D:\Mytest\MyTestHub\IMChat\IMChat\bin\Antlr3.Runtime.dll

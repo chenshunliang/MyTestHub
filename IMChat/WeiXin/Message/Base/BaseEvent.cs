@@ -14,7 +14,7 @@ namespace WeiXin.Message.Base
     {
         public BaseEvent()
         {
-            this.MsgType = ResponseMsgType.Event.ToString().ToLower();
+            this.MsgType = MsgTypeEnum.Event.ToString().ToLower();
         }
 
         public BaseEvent(BaseMessage info)

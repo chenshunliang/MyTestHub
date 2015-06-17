@@ -3,25 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Xml.Serialization;
-using WeiXin.Common;
 using WeiXin.Enum;
 using WeiXin.Message.Base;
-using WeiXin.Message.Res;
 
 namespace WeiXin.Message.Req
 {
     /// <summary>
-    /// 文本消息请求
+    /// 图片消息请求
     /// </summary>
     [XmlRoot(ElementName = "xml")]
-    public class RequestText : BaseMessage
+    public class RequestImage : BaseMessage
     {
-        public RequestText()
+        public RequestImage()
         {
-            this.MsgType = MsgTypeEnum.Text.ToString().ToLower();
+            this.MsgType = MsgTypeEnum.Image.ToString().ToLower();
         }
 
-        public RequestText(BaseMessage info)
+        public RequestImage(BaseMessage info)
             : this()
         {
             this.FromUserName = info.ToUserName;
@@ -29,14 +27,18 @@ namespace WeiXin.Message.Req
         }
 
         /// <summary>
-        /// 内容
-        /// </summary>        
-        public string Content { get; set; }
+        /// 图片链接
+        /// </summary>
+        public string PicUrl { get; set; }
+
+        /// <summary>
+        /// 图片消息媒体id
+        /// </summary>
+        public string MediaId { get; set; }
 
         /// <summary>
         /// 消息ID
         /// </summary>
         public long MsgId { get; set; }
-
     }
 }

@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using WeiXin.Common;
 using WeiXin.Message.Req;
+using WeiXin.Message.Res;
 
 namespace WeiXin.Handle
 {
+    /// <summary>
+    /// 微信消息实现
+    /// </summary>
     public class WeixinAction : IWeixinAction
     {
         /// <summary>
@@ -15,8 +16,23 @@ namespace WeiXin.Handle
         /// <returns></returns>
         public string HandleText(RequestText info)
         {
-            
-            return "";
+            ResponseText resText = new ResponseText(info);
+            if (info.Content == "")
+            {
+                resText.Content = "aaa";
+            }
+            return XMLUtil.Serializer(typeof(ResponseText), resText);
+        }
+
+
+        public string HandleImage(RequestImage info)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public string HandleEventSubscribe(RequestEventSubscribe info)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

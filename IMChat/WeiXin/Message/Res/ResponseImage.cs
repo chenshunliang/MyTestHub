@@ -2,23 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Xml.Serialization;
 using WeiXin.Enum;
 using WeiXin.Message.Base;
 
 namespace WeiXin.Message.Res
 {
     /// <summary>
-    /// 回复文本消息
+    /// 图片消息响应
     /// </summary>
-    [System.Xml.Serialization.XmlRoot(ElementName = "xml")]
-    public class ResponseText : BaseMessage
+    [XmlRoot(ElementName = "xml")]
+    public class ResponseImage : BaseMessage
     {
-        public ResponseText()
+        public ResponseImage()
         {
-            this.MsgType = MsgTypeEnum.Text.ToString().ToLower();
+            this.MsgType = MsgTypeEnum.Image.ToString().ToLower();
         }
 
-        public ResponseText(BaseMessage info)
+        public ResponseImage(BaseMessage info)
             : this()
         {
             this.FromUserName = info.ToUserName;
@@ -26,8 +27,8 @@ namespace WeiXin.Message.Res
         }
 
         /// <summary>
-        /// 内容
-        /// </summary>        
-        public string Content { get; set; }
+        /// 图片消息媒体id
+        /// </summary>
+        public string MediaId { get; set; }
     }
 }

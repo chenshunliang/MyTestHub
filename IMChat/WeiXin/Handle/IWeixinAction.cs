@@ -21,7 +21,7 @@ namespace WeiXin.Handle
         /// </summary>
         /// <param name="info">图片信息实体</param>
         /// <returns></returns>
-        //string HandleImage(RequestImage info);
+        string HandleImage(RequestImage info);
 
         //......
 
@@ -30,7 +30,7 @@ namespace WeiXin.Handle
         /// </summary>
         /// <param name="info">订阅请求事件信息实体</param>
         /// <returns></returns>
-        //string HandleEventSubscribe(RequestEventSubscribe info);
+        string HandleEventSubscribe(RequestEventSubscribe info);
 
         /// <summary>
         /// 对菜单单击请求事件进行处理

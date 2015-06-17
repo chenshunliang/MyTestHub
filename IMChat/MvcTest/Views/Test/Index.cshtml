@@ -8,30 +8,45 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="~/Scripts/Uploadify/uploadify.css" rel="stylesheet" />
 </head>
 <body>
     <div>
-        <input type="button" value="web service" onclick="Add();" />
+        <table style="width: 90%;">
+            <tr>
+                <td style="width: 100px;">
+                    <input type="file" name="uploadify" id="uploadify" />
+                </td>
+                <td align="left">
+                    <a href="javascript:$('#uploadify').uploadifyUpload()">开始上传</a>|  
+            <a href="javascript:jQuery('#uploadify').uploadifyClearQueue()">取消上传</a>
+                    <span id="result" style="font-size: 13px; color: red"></span>
+                </td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
 <script src="~/Scripts/jquery-1.8.2.min.js"></script>
-<script type="text/javascript">
-    function Add() {
-        try {
-            $.ajax({
-                type: "POST",  //访问WebService使用post方式请求
-                contentType: "application/json;utf-8",   //WebService会返回json类型
-                url: "http://localhost:4322/test.asmx?op=Add", //调用WebService的地址和方法名称组合
-                data: "{a:2,b:2.2}",  //这里是要传递的参数，格式为data:"{paraName:paraValue}"
-                dataType: "json",
-                success: function (result) {
-                    alert(result.d);
+<script src="~/Scripts/Uploadify/jquery.uploadify.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#uploadify").uploadify({
+                'uploader': '../uploadify/uploadify.swf',
+                'script': 'UploadPhotoServlet',
+                'cancelImg': 'uploadify/cancel.png',
+                'buttonImg': 'uploadify/buttonImg.png',
+                'folder': '/jxdBlog/photos',
+                'queueID': 'fileQueue',
+                'auto': false,
+                'multi': true,
+                'wmode': 'transparent',
+                'simUploadLimit': 999,
+                'fileExt': '*.png;*.gif;*.jpg;*.bmp;*.jpeg',
+                'fileDesc': '图片文件(*.png;*.gif;*.jpg;*.bmp;*.jpeg)',
+                'onAllComplete': function (event, data) {
+                    $('#result').html(data.filesUploaded + '个图片上传成功');
                 }
-            })
-        }
-        catch (ex) {
-            alert(ex);
-        }
-    }
-</script>
+            });
+        });
+    </script>
