@@ -22,7 +22,7 @@ namespace WeiXin.Controllers
         public ActionResult Test()
         {
             string str = GetAccessToken(_appId, _appSecret);
-            return View();
+            return Content(str);
         }
 
         /// <summary>

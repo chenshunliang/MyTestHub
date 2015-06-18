@@ -2,3 +2,4 @@ D:\Mytest\MyTestHub\IMChat\Aipay\bin\Aipay.dll
 D:\Mytest\MyTestHub\IMChat\Aipay\bin\Aipay.pdb
 D:\Mytest\MyTestHub\IMChat\Aipay\obj\Debug\Aipay.dll
 D:\Mytest\MyTestHub\IMChat\Aipay\obj\Debug\Aipay.pdb
+D:\Mytest\MyTestHub\IMChat\Aipay\obj\Debug\Aipay.csprojResolveAssemblyReference.cache

@@ -121,3 +121,4 @@ D:\Mytest\MyTestHub\IMChat\IMChat\bin\zh-Hans\System.Spatial.resources.dll
 D:\Mytest\MyTestHub\IMChat\IMChat\bin\zh-Hant\System.Spatial.resources.dll
 D:\Mytest\MyTestHub\IMChat\IMChat\obj\Debug\IMChat.dll
 D:\Mytest\MyTestHub\IMChat\IMChat\obj\Debug\IMChat.pdb
+D:\Mytest\MyTestHub\IMChat\IMChat\obj\Debug\IMChat.csprojResolveAssemblyReference.cache

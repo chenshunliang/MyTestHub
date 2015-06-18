@@ -13,3 +13,4 @@ D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\PanGu.HighLight.dll
 D:\Mytest\MyTestHub\IMChat\LucenneTest\bin\PanGu.Lucene.Analyzer.dll
 D:\Mytest\MyTestHub\IMChat\LucenneTest\obj\Debug\LucenneTest.dll
 D:\Mytest\MyTestHub\IMChat\LucenneTest\obj\Debug\LucenneTest.pdb
+D:\Mytest\MyTestHub\IMChat\LucenneTest\obj\Debug\LucenneTest.csprojResolveAssemblyReference.cache
