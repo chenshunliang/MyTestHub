@@ -115,6 +115,7 @@
     <Compile Include="Common\MemoryCacheHelper.cs" />
     <Compile Include="Common\MsgCrypt.cs" />
     <Compile Include="Common\XMLUtil.cs" />
+    <Compile Include="Controllers\PhotoController.cs" />
     <Compile Include="Controllers\WeiXinController.cs" />
     <Compile Include="Enum\EventType.cs" />
     <Compile Include="Enum\MsgTypeEnum.cs" />
