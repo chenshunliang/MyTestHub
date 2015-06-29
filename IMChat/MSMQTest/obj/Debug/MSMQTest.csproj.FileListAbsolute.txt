@@ -4,3 +4,6 @@ D:\Mytest\MyTestHub\IMChat\MSMQTest\bin\Debug\MSMQTest.pdb
 D:\Mytest\MyTestHub\IMChat\MSMQTest\obj\Debug\MSMQTest.exe
 D:\Mytest\MyTestHub\IMChat\MSMQTest\obj\Debug\MSMQTest.pdb
 D:\Mytest\MyTestHub\IMChat\MSMQTest\obj\Debug\MSMQTest.csprojResolveAssemblyReference.cache
+D:\Mytest\MyTestHub\IMChat\MSMQTest\bin\Debug\RabbitMQ.Client.dll
+D:\Mytest\MyTestHub\IMChat\MSMQTest\bin\Debug\RabbitMQ.ServiceModel.dll
+D:\Mytest\MyTestHub\IMChat\MSMQTest\bin\Debug\RabbitMQ.Client.xml

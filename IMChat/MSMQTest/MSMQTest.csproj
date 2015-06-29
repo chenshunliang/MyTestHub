@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\..\libs\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="RabbitMQ.ServiceModel">
+      <HintPath>..\..\libs\RabbitMQ.ServiceModel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
@@ -42,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustmerMq.cs" />
     <Compile Include="DTcmsQueue.cs" />
+    <Compile Include="ProducerMq.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

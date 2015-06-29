@@ -102,10 +102,12 @@ namespace Test
             //}
             //Console.WriteLine(EncodePwdToMD5("abc", "a"));
 
-            MessageQueue mq = new MessageQueue(@".\Private$\test2");
-            mq.Formatter = new XmlMessageFormatter(new string[] { "System.String" });
-            Message obj = (Message)mq.Receive();
-            Console.WriteLine(obj.Body);
+            //MessageQueue mq = new MessageQueue(@".\Private$\test2");
+            //mq.Formatter = new XmlMessageFormatter(new string[] { "System.String" });
+            //Message obj = (Message)mq.Receive();
+            //Console.WriteLine(obj.Body);
+
+            CustmerMq.InitCustmerMq();
 
             Console.ReadKey();
         }

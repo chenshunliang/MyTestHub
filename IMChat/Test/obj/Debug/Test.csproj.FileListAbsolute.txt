@@ -10,3 +10,6 @@ D:\Mytest\MyTestHub\IMChat\Test\obj\Debug\Test.exe
 D:\Mytest\MyTestHub\IMChat\Test\obj\Debug\Test.pdb
 D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\MSMQTest.exe
 D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\MSMQTest.pdb
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\RabbitMQ.Client.dll
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\RabbitMQ.ServiceModel.dll
+D:\Mytest\MyTestHub\IMChat\Test\bin\Debug\RabbitMQ.Client.xml
